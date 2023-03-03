@@ -5,12 +5,11 @@ plugins {
 
 android {
     namespace 'com.example.kotlin_test'
-    compileSdk 34
-
+    compileSdk 33
     defaultConfig {
         applicationId "com.example.kotlin_test"
-        minSdk 24
-        targetSdk 34
+        minSdk 23
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
