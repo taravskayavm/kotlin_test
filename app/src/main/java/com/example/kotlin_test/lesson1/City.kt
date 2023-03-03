@@ -4,7 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.View
 
-open class City constructor (val name:String="defaultName", var temperature: Int=15) {
+internal open class City constructor (val name:String="defaultName", var temperature: Int=15) {
 
     fun test(testParam: String="Stroka") {
         testParam2 = "Stroka2"
@@ -29,17 +29,12 @@ open class City constructor (val name:String="defaultName", var temperature: Int
     }
     constructor(name:String,temperature:Int,descr1:String,descr2:String,descr3:String):this(name,temperature,descr1,descr2){
     }
-
-}
-
-fun test(testParam:String) {
 }
 
 
-class CityName : City(), View.OnClickListener{
+internal class CityName : City(), View.OnClickListener{
     override fun onClick(p0: View?) {
     }
-
 }
 
 class Button @JvmOverloads constructor(context: Context, attributeSet: AttributeSet?=null,defStyleAttr:Int?=null, defStyleRes: Int?){
