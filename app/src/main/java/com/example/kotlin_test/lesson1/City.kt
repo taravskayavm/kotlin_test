@@ -11,6 +11,7 @@ internal open class City constructor (val name:String="defaultName", var tempera
         val testParam3 = testParam2
     }
 
+
     var  p = ""
     get() {
         return field
